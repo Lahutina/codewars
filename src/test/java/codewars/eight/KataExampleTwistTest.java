@@ -1,3 +1,5 @@
+package codewars.eight;
+
 import codewars.eight.KataExampleTwist;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
