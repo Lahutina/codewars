@@ -1,5 +1,9 @@
 package codewars.seven;
 
+/*
+https://www.codewars.com/kata/56576f82ab83ee8268000059/train/java
+ */
+
 public class RunningOutOfSpace {
     public static String[] spacey(String[] array) {
         String[] result = new String[array.length];
