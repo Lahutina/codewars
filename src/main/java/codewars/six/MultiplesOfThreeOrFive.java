@@ -1,5 +1,9 @@
 package codewars.six;
 
+/*
+https://www.codewars.com/kata/514b92a657cdc65150000006/train/java
+*/
+
 public class MultiplesOfThreeOrFive {
 
     public int solution(int number) {
