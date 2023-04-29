@@ -1,6 +1,7 @@
 package codewars.seven;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 /*
 https://www.codewars.com/kata/5a512f6a80eba857280000fc/train/java
@@ -8,6 +9,7 @@ https://www.codewars.com/kata/5a512f6a80eba857280000fc/train/java
 public class NthSmallestElement {
 
     public static int nthSmallest(final int[] arr, final int n) {
-        return Arrays.stream(arr).sorted().toArray()[n-1];
+        return IntStream.of(arr).sorted().skip(n - 1).limit(1).findAny().orElse(0);
+        //        return Arrays.stream(arr).sorted().toArray()[n-1];
     }
 }
