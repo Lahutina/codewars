@@ -6,6 +6,7 @@ https://www.codewars.com/kata/551f37452ff852b7bd000139/train/java
 
 public class BinaryAddition {
     public static String binaryAddition(int a, int b) {
+        /*
         StringBuilder binaryNumber = new StringBuilder();
         int sum = a + b;
 
@@ -15,5 +16,7 @@ public class BinaryAddition {
         }
 
         return binaryNumber.reverse().toString();
+         */
+        return Integer.toBinaryString(a + b);
     }
 }
