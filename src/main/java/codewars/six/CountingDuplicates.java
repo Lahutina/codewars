@@ -9,11 +9,11 @@ https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/java
 public class CountingDuplicates {
     public static int duplicateCount(String text) {
         char[] inputCharacters = text.toLowerCase().toCharArray();
-        Map<Character, Boolean> isCharMoreThanOne = new HashMap<>();
+        Map<Character, Integer> isCharMoreThanOne = new HashMap<>();
 
         for (char c : inputCharacters) {
-            isCharMoreThanOne.put(c, isCharMoreThanOne.containsKey(c));
+            isCharMoreThanOne.put(c, isCharMoreThanOne.containsKey(c) ? 1 : 0);
         }
-        return isCharMoreThanOne.values().stream().mapToInt(v -> v ? 1 : 0).sum();
+        return isCharMoreThanOne.values().stream().mapToInt(Integer::intValue).sum();
     }
 }
