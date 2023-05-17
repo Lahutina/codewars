@@ -3,6 +3,9 @@ package codewars.five;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/*
+https://www.codewars.com/kata/55c04b4cc56a697bb0000048/train/java
+ */
 public class Scramblies {
     public static boolean scramble(String str1, String str2) {
         Map<Character, Integer> str1Map = str1.chars()
